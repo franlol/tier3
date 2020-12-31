@@ -1,20 +1,4 @@
 body {
   padding: 0;
   margin: 0;
-  
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-
-  background: #232931;
-}
-
-@media (max-width: 425px) {
-  .container {
-    width: 100vw;
-    padding: 0 10px;
-    margin: 0 auto;
-    
-    border: 1px solid dodgerblue;
-  }
-  
 }

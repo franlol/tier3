@@ -1,12 +1,26 @@
-import React from 'react'
-import Navbar from '../Navbar/Navbar'
-import { H1, Header } from './header.styles'
+import React from 'react';
 
-export default function () {
+import Burger from '../Burger/Burger';
+import Navbar from '../Navbar/Navbar';
+
+import HeaderProvider from '../../context/header';
+import { H1, HeaderWrapper, TitleWrapper } from './header.styles';
+
+const Header = () => {
   return (
-    <Header>
-      <H1>Tier 3 helper</H1>
-      <Navbar />
-    </Header>
-  )
+    <HeaderProvider>
+      <HeaderWrapper>
+
+        <TitleWrapper>
+          <H1>Tier 3 helper</H1>
+          <Burger />
+        </TitleWrapper>
+
+        <Navbar />
+
+      </HeaderWrapper>
+    </HeaderProvider >
+  );
 }
+
+export default Header;

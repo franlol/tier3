@@ -1,7 +1,9 @@
 import React from 'react';
 
 import Header from '../../components/Header/Header';
+import Icon from '../../components/Icon/Icon';
 
+import { CLASS } from '../../types/classes.types';
 import { Main, Wrapper } from './home.styles';
 
 export default function Home() {
@@ -10,7 +12,7 @@ export default function Home() {
       <Header />
 
       <Main>
-        {/*<Icon charClass={CLASS.Shaman} />*/}
+        <Icon charClass={CLASS.Shaman} />
       </Main>
 
       <footer style={{ margin: 'auto 0 0' }}>
